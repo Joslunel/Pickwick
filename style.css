@@ -292,7 +292,7 @@ html {
 .contact {
   background: url("https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/newsletter-desktop.png")
     no-repeat center center/cover;
-  height: 150vh;
+  height: 100vh;
 }
 .contact-wrapper {
   display: flex;
