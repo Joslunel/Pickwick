@@ -184,7 +184,7 @@ html {
   margin-top: 2rem;
   line-height: 1.6rem;
 }
-.fav-bottom-bar {
+.btn {
   background: var(--p-green);
   color: #ffffff;
   padding: 1rem;
@@ -227,7 +227,7 @@ html {
   font-family: "Merienda", cursive;
   color: var(--p-green);
 }
-.tea-topics a {
+.tea-topics .btn {
   background: var(--p-green);
   color: #ffffff;
   padding: 1rem;
@@ -239,7 +239,6 @@ html {
 .inspiration {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: 6rem auto;
   grid-template-areas:
     " . insp-header . "
     "insp-item-wrapper insp-item-wrapper insp-item-wrapper ";
@@ -255,8 +254,12 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;
+  margin: 2rem 0;
 }
 .insp-item {
+  padding-bottom: 3rem;
+}
+.insp-item:hover {
   box-shadow: 1px 1px 10px gray;
 }
 
@@ -277,9 +280,8 @@ html {
   font-size: 1.6rem;
   margin: 2rem 2rem 2rem 1rem;
 }
-.insp-item a {
+.insp-item .btn {
   text-decoration: none;
-  color: var(--p-green);
   margin: 2rem 2rem 2rem 1rem;
 }
 .insp-item p {
@@ -290,5 +292,107 @@ html {
 .contact {
   background: url("https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/newsletter-desktop.png")
     no-repeat center center/cover;
-    height: 100vh;
+  height: 150vh;
+}
+.contact-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 800px;
+  min-width: 600px;
+  padding: 2rem 0 2rem 8rem;
+}
+.contact-wrapper-heading {
+  margin-bottom: 2rem;
+}
+.contact-wrapper-heading h2 {
+  font-family: "Merienda", cursive;
+  color: var(--p-green);
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.contact-wrapper-heading p {
+  line-height: 1.6rem;
+}
+.gender {
+  display: flex;
+}
+.gender .male {
+  margin-right: 2rem;
+}
+.gender input {
+  width: 2rem;
+  height: 2rem;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border-radius: 50%;
+  vertical-align: -10px;
+}
+
+.gender input:checked {
+  background: no-repeat center
+    url(https://www.pickwick.nl/siteassets/_new/iconselements/icons/checkmark-form-green.svg)
+    #fff;
+}
+.name-wrap {
+  display: flex;
+  margin: 2rem 0;
+}
+.name {
+  display: flex;
+  flex-flow: column;
+  margin-right: 2rem;
+}
+.name input {
+  width: 20rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+}
+.name label {
+  margin: 1rem 0;
+}
+.email {
+  display: flex;
+  flex-flow: column;
+}
+.email input {
+  width: 42rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+}
+.email label {
+  margin: 1rem 0;
+}
+.confirm-age input {
+  width: 2rem;
+  height: 2rem;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border-radius: 10%;
+  margin: 2rem 1rem 1rem 0;
+  vertical-align: -25px;
+}
+.confirm-age input:checked {
+  background: no-repeat center
+    url(https://www.pickwick.nl/siteassets/_new/iconselements/icons/checkmark-form-green.svg)
+    #fff;
+}
+.confirm-member input {
+  width: 2rem;
+  height: 2rem;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border-radius: 10%;
+  margin: 2rem 1rem 1rem 0;
+}
+.confirm-member input:checked {
+  background: no-repeat center
+    url(https://www.pickwick.nl/siteassets/_new/iconselements/icons/checkmark-form-green.svg)
+    #fff;
+}
+.button {
+  margin-top: 3rem;
 }
