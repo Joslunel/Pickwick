@@ -121,7 +121,7 @@
             <p>Licht zoete groene thee met rozenblaadjes en framboos.</p>
           </div>
         </div>
-        <a href="https://www.pickwick.nl/assortiment/" class="fav-bottom-bar"
+        <a href="https://www.pickwick.nl/assortiment/" class="btn"
           >Bekijk ons assortiment</a
         >
       </div>
@@ -143,7 +143,7 @@
           verhaal van Tarek. Nieuwsgierig naar alle persoonlijke verhalen? Of
           wil je weten hoe je zelf een theelabel kunt maken?
         </p>
-        <a href="#">Bekijk alle Tea Topics</a>
+        <a href="#" class="btn">Bekijk alle Tea Topics</a>
       </div>
     </article>
     <article class="inspiration">
@@ -160,7 +160,7 @@
             citroen en muntblaadjes toe en maak in een handomdraai jouw eigen
             Pickwick Iced tea. Verrassend lekker!
           </p>
-          <a href="#">Ontdek het recept</a>
+          <a href="#" class="btn">Ontdek het recept</a>
         </div>
         <div class="insp-item">
           <img
@@ -173,7 +173,7 @@
             in een klein dorpje in Friesland. Onze eerste en nog steeds meest
             populaire blend is Pickwick English.
           </p>
-          <a href="#">Meer over Pickwick</a>
+          <a href="#" class="btn">Meer over Pickwick</a>
         </div>
         <div class="insp-item">
           <img
@@ -188,35 +188,45 @@
             vlierbloesem en mint is 100% natuurlijk. Benieuwd geworden? Kijk
             hieronder waar je het kan kopen!
           </p>
-          <a href="#">Koop online</a>
+          <a href="#" class="btn">Koop online</a>
         </div>
       </div>
     </article>
     <section class="contact">
       <div class="contact-wrapper">
-        <h2>Pickwick Theeblaadje</h2>
-        <p>
-          Onze nieuwsbrief loopt over van de lekkere recepten, aanbiedingen,
-          nieuwe producten en leuke evenementen van Pickwick.
-        </p>
+        <div class="contact-wrapper-heading">
+          <h2>Pickwick Theeblaadje</h2>
+          <p>
+            Onze nieuwsbrief loopt over van de lekkere recepten, aanbiedingen,
+            nieuwe producten en leuke evenementen van Pickwick.
+          </p>
+        </div>
         <form action="#">
           <div class="gender">
-            <input type="radio" name="gender" id="Dhr" />
-            <label for="Dhr">Dhr</label>
-            <input type="radio" name="gender" id="Mevr" />
-            <label for="Mevr">Mevr</label>
+            <div class="male">
+              <input type="radio" name="gender" id="Dhr" />
+              <label for="Dhr">Dhr</label>
+            </div>
+            <div class="female">
+              <input type="radio" name="gender" id="Mevr" />
+              <label for="Mevr">Mevr</label>
+            </div>
           </div>
-          <div class="name">
-            <label for="first-name">Voornaam</label>
-            <input type="text" name="first-name" id="first-name" />
-            <label for="fam-name">Achternaam</label>
-            <input type="text" name="fam-name" id="fam-name" />
+          <div class="name-wrap">
+            <div class="name">
+              <label for="first-name">Voornaam</label>
+              <input type="text" name="first-name" id="first-name" />
+            </div>
+            <div class="name">
+              <label for="fam-name">Achternaam</label>
+              <input type="text" name="fam-name" id="fam-name" />
+            </div>
           </div>
           <div class="email">
-            <label for="email">Email</label>
+            <label for="email">E-mailadres</label>
             <input type="text" name="email" id="email" />
           </div>
-          <div class="confirm_age">
+          <div class="confirm-age">
             <input type="checkbox" name="confirm-age" id="confirm-age" />
             <label for="confirm-age">Ja, ik ben ouder dan 16 jaar</label>
           </div>
@@ -238,7 +248,9 @@
             >
           </div>
         </form>
-        <a href="#">Schrijf je nu in</a>
+        <div class="button">
+          <a href="#" class="btn">Schrijf je nu in</a>
+        </div>
       </div>
     </section>
     <footer class="footer-section">
