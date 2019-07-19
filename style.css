@@ -87,6 +87,7 @@ html {
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  line-height: 2.5rem;
 }
 
 /* section-more */
@@ -120,6 +121,7 @@ html {
 }
 .more-explore p {
   padding-bottom: 3rem;
+  line-height: 1.6rem;
 }
 .more-explore .btn {
   background: var(--p-green);
@@ -153,7 +155,7 @@ html {
   margin-bottom: 4rem;
 }
 .favorites .fav-item img {
-  width: 70%;
+  width: 50%;
   box-shadow: 1px 1px 3px #000;
   display: block;
   margin-bottom: 2rem;
@@ -180,6 +182,7 @@ html {
 }
 .fav-wrapper p {
   margin-top: 2rem;
+  line-height: 1.6rem;
 }
 .fav-bottom-bar {
   background: var(--p-green);
@@ -205,7 +208,6 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   margin-top: 3rem;
-  /* justify-items: end; */
 }
 .tea-topics-video {
   justify-self: end;
@@ -218,7 +220,8 @@ html {
 }
 
 .tea-topics-text p {
-  margin: 3rem 15rem 2rem 0;
+  margin: 2rem 15rem 2rem 0;
+  line-height: 1.6rem;
 }
 .tea-topics h2 {
   font-family: "Merienda", cursive;
@@ -230,4 +233,62 @@ html {
   padding: 1rem;
   border-radius: 20px;
   text-decoration: none;
+}
+
+/* inspiration */
+.inspiration {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 6rem auto;
+  grid-template-areas:
+    " . insp-header . "
+    "insp-item-wrapper insp-item-wrapper insp-item-wrapper ";
+  grid-gap: 2rem;
+  max-width: 80vw;
+  margin: auto;
+}
+.insp-header {
+  grid-area: insp-header;
+}
+.insp-item-wrapper {
+  grid-area: insp-item-wrapper;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+.insp-item {
+  box-shadow: 1px 1px 10px gray;
+}
+
+.inspiration h2 {
+  text-align: center;
+  padding-top: 3rem;
+  font-family: "Merienda", cursive;
+  color: var(--p-green);
+  font-size: 1.6rem;
+}
+.insp-item img {
+  width: 100%;
+  display: block;
+}
+.insp-item h3 {
+  font-family: "Merienda", cursive;
+  color: #000;
+  font-size: 1.6rem;
+  margin: 2rem 2rem 2rem 1rem;
+}
+.insp-item a {
+  text-decoration: none;
+  color: var(--p-green);
+  margin: 2rem 2rem 2rem 1rem;
+}
+.insp-item p {
+  margin: 2rem 2rem 2rem 1rem;
+  line-height: 1.6rem;
+}
+/* contact */
+.contact {
+  background: url("https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/newsletter-desktop.png")
+    no-repeat center center/cover;
+    height: 100vh;
 }
