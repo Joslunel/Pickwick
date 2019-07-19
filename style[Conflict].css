@@ -1,0 +1,263 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  font-family: "Quicksand", sans-serif;
+  --p-green: #4b9618;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* navigation */
+
+.navigation {
+  background: #ffffff;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.navigation-bar {
+  max-width: 1200px;
+}
+
+.navigation-bar li {
+  padding: 0 2rem;
+}
+
+.navigation-bar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: auto;
+}
+.navigation-bar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.navigation-bar .btn {
+  background: var(--p-green);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+/* showcase */
+
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url(https://www.pickwick.nl/siteassets/_new/iconselements/masks/header-mask.svg)
+    no-repeat bottom;
+}
+
+.showcase-img {
+  background: url(https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/pick_2019_zom_avon_0489.jpg?preset=block-background-mobile)
+    no-repeat center center/cover;
+  width: 100vw;
+  height: 99vh;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  position: absolute;
+  z-index: -1;
+}
+.showcase .showcase-call-to-action {
+  position: absolute;
+  color: #ffffff;
+  width: 35%;
+  top: 15rem;
+  left: 5rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+.showcase-call-to-action p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* section-more */
+.more {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 2rem;
+  max-width: 80vw;
+  margin: auto;
+}
+.more-img img {
+  width: 100%;
+  display: block;
+}
+.more-explore {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.more-explore h1 {
+  font-family: "Merienda", cursive;
+  padding-bottom: 3rem;
+  color: var(--p-green);
+  font-size: 2.5rem;
+}
+.more-explore a {
+  text-decoration: none;
+  color: #000;
+}
+.more-explore p {
+  padding-bottom: 3rem;
+}
+.more-explore .btn {
+  background: var(--p-green);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+/* favorites */
+
+.favorites {
+  background-color: #eceade;
+}
+.fav-top-bar {
+  margin-top: 2rem;
+}
+.favorites .fav-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: url(https://www.pickwick.nl/siteassets/_new/iconselements/masks/inverted-mask.svg)
+    no-repeat top;
+}
+.favorites .fav-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  grid-gap: 4rem;
+  align-items: end;
+  margin-bottom: 4rem;
+}
+.favorites .fav-item img {
+  width: 50%;
+  box-shadow: 1px 1px 3px #000;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.fav-item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.favorites h2 {
+  color: var(--p-green);
+  font-family: "Merienda", cursive;
+  font-size: 2.5rem;
+}
+.fav-item a {
+  font-family: "Merienda", cursive;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.fav-wrapper p {
+  margin-top: 2rem;
+}
+.fav-bottom-bar {
+  background: var(--p-green);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.fav-wrapper::after {
+  content: "";
+  background: url(https://www.pickwick.nl/siteassets/_new/iconselements/masks/inverted-mask.svg)
+    no-repeat bottom;
+  width: 100vw;
+  height: 20vh;
+  transform: rotate(180deg);
+  position: relative;
+  top: 50px;
+}
+
+/* tea topics */
+.tea-topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.tea-topics-video {
+  justify-self: end;
+}
+.tea-topics-text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: center;
+}
+
+.tea-topics-text p {
+  margin: 3rem 15rem 2rem 0;
+}
+.tea-topics h2 {
+  font-family: "Merienda", cursive;
+  color: var(--p-green);
+}
+.tea-topics a {
+  background: var(--p-green);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* inspiration */
+.inspiration {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    " . insp-header . "
+    "item-1 item-2 item-3 ";
+}
+.insp-header {
+  grid-area: insp-header;
+}
+
+.item-1 {
+  grid-area: item-1;
+}
+.item-2 {
+  grid-area: item-2;
+}
+.item-3 {
+  grid-area: item-3;
+}
+.inspiration h2 {
+  text-align: center;
+  padding-top: 3rem;
+  font-family: "Merienda", cursive;
+  color: var(--p-green);
+  font-size: 1.6rem;
+
+}
