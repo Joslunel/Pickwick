@@ -26,10 +26,10 @@ html {
   display: flex;
   justify-content: center;
   z-index: 2;
+  white-space: nowrap;
 }
 .navigation-bar {
   max-width: 1200px;
-  white-space: nowrap;
 }
 
 .navigation-bar li {
