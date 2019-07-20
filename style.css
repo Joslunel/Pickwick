@@ -413,3 +413,22 @@ html {
 .button {
   margin-top: 3rem;
 }
+
+/* footer */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-top-left h3,
+.footer-top-right h3 {
+  font-family: "Merienda", cursive;
+  color: #000;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+.footer-logo-wrap img {
+  padding-right: 1.5rem;
+}
