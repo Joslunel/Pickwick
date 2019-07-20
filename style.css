@@ -257,6 +257,10 @@ html {
   margin: 2rem 0;
 }
 .insp-item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  text-align: center;
   padding-bottom: 3rem;
 }
 .insp-item:hover {
@@ -283,6 +287,7 @@ html {
 .insp-item .btn {
   text-decoration: none;
   margin: 2rem 2rem 2rem 1rem;
+  align-self: center;
 }
 .insp-item p {
   margin: 2rem 2rem 2rem 1rem;
@@ -380,6 +385,10 @@ html {
     url(https://www.pickwick.nl/siteassets/_new/iconselements/icons/checkmark-form-green.svg)
     #fff;
 }
+.confirm-age label,
+.confirm-member p {
+  font-size: 0.8rem;
+}
 .confirm-member input {
   width: 2rem;
   height: 2rem;
@@ -392,6 +401,14 @@ html {
   background: no-repeat center
     url(https://www.pickwick.nl/siteassets/_new/iconselements/icons/checkmark-form-green.svg)
     #fff;
+}
+.confirm-member {
+  display: grid;
+
+  grid-template-columns: 3rem 1fr;
+}
+.confirm-member p {
+  align-self: end;
 }
 .button {
   margin-top: 3rem;
