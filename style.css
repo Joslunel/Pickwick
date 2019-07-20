@@ -29,6 +29,7 @@ html {
 }
 .navigation-bar {
   max-width: 1200px;
+  white-space: nowrap;
 }
 
 .navigation-bar li {
