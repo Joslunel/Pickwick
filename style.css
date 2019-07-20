@@ -58,7 +58,7 @@ html {
 .showcase {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100vw;
+  width: 101vw;
   height: 100vh;
   position: relative;
   background: url(https://www.pickwick.nl/siteassets/_new/iconselements/masks/header-mask.svg)
