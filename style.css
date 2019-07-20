@@ -85,6 +85,7 @@ html {
 }
 .showcase-call-to-action p {
   font-size: 1.5rem;
+  color: #fff;
   font-weight: bold;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
   line-height: 2.5rem;
@@ -353,6 +354,8 @@ html {
   background-color: #fff;
   border-radius: 20px;
   border: none;
+  font-size: 1rem;
+  padding: 1rem;
 }
 .name label {
   margin: 1rem 0;
@@ -367,6 +370,8 @@ html {
   background-color: #fff;
   border-radius: 20px;
   border: none;
+  font-size: 1rem;
+  padding: 1rem;
 }
 .email label {
   margin: 1rem 0;
@@ -387,7 +392,7 @@ html {
 }
 .confirm-age label,
 .confirm-member p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .confirm-member input {
   width: 2rem;
@@ -404,7 +409,6 @@ html {
 }
 .confirm-member {
   display: grid;
-
   grid-template-columns: 3rem 1fr;
 }
 .confirm-member p {
@@ -416,19 +420,64 @@ html {
 
 /* footer */
 
-.footer-top {
+.footer-social {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
 }
-.footer-top-left h3,
-.footer-top-right h3 {
+.footer-social-left h3,
+.footer-social-right h3 {
   font-family: "Merienda", cursive;
   color: #000;
   font-size: 1.6rem;
   padding: 1rem 0;
+  text-align: right;
 }
-.footer-logo-wrap img {
-  padding-right: 1.5rem;
+.footer-social-logo img {
+  padding-left: 1.5rem;
+}
+.footer-info {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.footer-info-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.footer-pickwick-logo img {
+  width: 13rem;
+  align-self: end;
+}
+.footer-info-links h3 {
+  font-family: "Merienda", cursive;
+  color: #000;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.footer-info-links li {
+  list-style: none;
+}
+.footer-info-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+.footer-disclaimer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-disclaimer a,
+.footer-disclaimer p {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
 }
